@@ -1,0 +1,57 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #525659;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cv {
+    width: 820px!important;
+    height: 1122px!important;
+}
+
+.cv-left {
+    background-color: #37474F;
+}
+
+.cv-right {
+    background-color: white;
+}
+
+.cv-info-header {
+    background-color: #263238;
+}
+
+.cv-info-body {
+    font-size: 14px;
+}
+
+.cat-title {
+    display: flex;
+    align-items: center;
+}
+
+.cat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #263238;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.skill-item {
+    font-weight: 700;
+    color: #263238;
+    border-radius: 20px;
+    background-color: white;
+    padding: 0.25rem 0.75rem;
+}

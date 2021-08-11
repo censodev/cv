@@ -1,0 +1,91 @@
+{
+    "fullName": "Phuong Bui Viet",
+    "avatar": "",
+    "career": "Software Developer",
+    "birthDate": "Nov 11, 2000",
+    "gender": "Male",
+    "phone": "0964603264",
+    "mail": "buiphuongaptutc@gmail.com",
+    "address": "Hanoi, Vietnam",
+    "github": "https://github.com/censodev",
+    "skillsTitle": "SKILLS",
+    "skills": [
+        "Java",
+        "Spring Boot",
+        "JS/TS",
+        "Angular",
+        "Docker"
+    ],
+    "eduTitle": "education",
+    "edu": [
+        {
+            "school": "UNIVERSITY OF TRANSPORT AND COMMUNICATIONS",
+            "spec": "Information Technology",
+            "time": "AUG 2018 - PRESENT",
+            "degree": ""
+        },
+        {
+            "school": "Aptech Aprotrain",
+            "spec": "Information Technology",
+            "time": "AUG 2018 - PRESENT",
+            "degree": ""
+        }
+    ],
+    "workExpTitle": "WORK EXPERIENCE",
+    "workExp": [
+        {
+            "company": "MIRAISOFT VIETNAM JSC",
+            "career": "Software Developer",
+            "time": "JUNE 2019 - PRESENT"
+        }
+    ],
+    "projectsTitle": "PROJECTS",
+    "projects": [
+        {
+            "name": "EVACCINE",
+            "time": "JUN 2021 - PRESENT",
+            "role": "Dev-ops",
+            "des": "Vaccine distribution and management system especially support for Covid-19 vaccination campaign of CDC Hanoi (Centers for Disease Control and Prevention)",
+            "tech": [
+                "Spring",
+                "Angular",
+                "React Native"
+            ],
+            "team": "20 members"
+        },
+        {
+            "name": "AIS MONITORING",
+            "time": "APR 2021 - AUG 2021",
+            "role": "Full-stack developer",
+            "des": "Monitor ship's voyage in seaports, manage dredgers plans,...",
+            "tech": [
+                "Spring",
+                "Angular"
+            ],
+            "team": "5 members"
+        },
+        {
+            "name": "BDA PROJECT",
+            "time": "FEB 2021 - APR 2021",
+            "role": "Back-end developer",
+            "des": "Economy and social analyzing by implementing big data system",
+            "tech": [
+                "Java",
+                "Hadoop",
+                "Tibco Spotfire"
+            ],
+            "team": "5 members"
+        },
+        {
+            "name": "ECONTACT 2.0",
+            "time": "OCT 2019 - FEB 2021",
+            "role": "Back-end developer",
+            "des": "Internal application for telecom switchboard operators",
+            "tech": [
+                "Spring",
+                "Angular"
+            ],
+            "team": "12 members"
+        }
+    ]
+}

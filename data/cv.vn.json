@@ -1,0 +1,91 @@
+{
+    "fullName": "Bùi Việt Phương",
+    "avatar": "",
+    "career": "Software Developer",
+    "birthDate": "11/11/2000",
+    "gender": "Nam",
+    "phone": "0964603264",
+    "mail": "buiphuongaptutc@gmail.com",
+    "address": "Hà Nội, Việt Nam",
+    "github": "https://github.com/censodev",
+    "skillsTitle": "kỹ năng",
+    "skills": [
+        "Java",
+        "Spring Boot",
+        "JS/TS",
+        "Angular",
+        "Docker"
+    ],
+    "eduTitle": "học vấn",
+    "edu": [
+        {
+            "school": "Đại học Giao thông vận tải",
+            "spec": "Công nghệ thông tin",
+            "time": "T8 2018 - Hiện tại",
+            "degree": ""
+        },
+        {
+            "school": "Aptech Aprotrain",
+            "spec": "Công nghệ thông tin",
+            "time": "T8 2018 - Hiện tại",
+            "degree": ""
+        }
+    ],
+    "workExpTitle": "kinh nghiệm",
+    "workExp": [
+        {
+            "company": "Công ty Cổ phần Phần mềm Mirai Việt Nam",
+            "career": "Software Developer",
+            "time": "T6 2019 - Hiện tại"
+        }
+    ],
+    "projectsTitle": "dự án",
+    "projects": [
+        {
+            "name": "EVACCINE",
+            "time": "T6 2021 - Hiện tại",
+            "role": "Dev-ops",
+            "des": "Hệ thống phân phối và quản lý vắc xin đặc biệt hỗ trợ cho chiến dịch tiêm chủng Covid-19 của CDC Hà Nội (Trung tâm Kiểm soát và Phòng ngừa Dịch bệnh)",
+            "tech": [
+                "Spring",
+                "Angular",
+                "React Native"
+            ],
+            "team": "20 thành viên"
+        },
+        {
+            "name": "AIS MONITORING",
+            "time": "T4 2021 - T8 2021",
+            "role": "Full-stack developer",
+            "des": "Giám sát hải trình tàu biển, quản lý kế hoạch tàu nạo vét,...",
+            "tech": [
+                "Spring",
+                "Angular"
+            ],
+            "team": "5 thành viên"
+        },
+        {
+            "name": "BDA PROJECT",
+            "time": "T2 2021 - T4 2021",
+            "role": "Back-end developer",
+            "des": "Nghiên cứu, phân tích báo cáo kinh tế và các danh mục đầu tư công, an sinh xã hội... triển khai trên hệ thống Big Data",
+            "tech": [
+                "Java",
+                "Hadoop",
+                "Tibco Spotfire"
+            ],
+            "team": "5 thành viên"
+        },
+        {
+            "name": "ECONTACT 2.0",
+            "time": "T10 2019 - T2 2021",
+            "role": "Back-end developer",
+            "des": "Ứng dụng nội bộ quản trị tổng đài viễn thông",
+            "tech": [
+                "Spring",
+                "Angular"
+            ],
+            "team": "12 thành viên"
+        }
+    ]
+}
