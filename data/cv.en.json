@@ -1,7 +1,7 @@
 {
     "fullName": "Phuong Bui Viet",
     "avatar": "",
-    "career": "Software Developer",
+    "career": "Software Engineer",
     "birthDate": "Nov 11, 2000",
     "gender": "Male",
     "phone": "0964603264",
@@ -44,7 +44,7 @@
         {
             "name": "EVACCINE",
             "time": "JUN 2021 - PRESENT",
-            "role": "Dev-ops",
+            "role": "Full-stack developer",
             "des": "Vaccine distribution and management system especially support for Covid-19 vaccination campaign of CDC Hanoi (Centers for Disease Control and Prevention)",
             "tech": [
                 "Spring",
