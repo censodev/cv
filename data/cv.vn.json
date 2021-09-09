@@ -1,7 +1,7 @@
 {
     "fullName": "Bùi Việt Phương",
     "avatar": "",
-    "career": "Software Developer",
+    "career": "Software Engineer",
     "birthDate": "11/11/2000",
     "gender": "Nam",
     "phone": "0964603264",
@@ -35,7 +35,7 @@
     "workExp": [
         {
             "company": "Công ty Cổ phần Phần mềm Mirai Việt Nam",
-            "career": "Software Developer",
+            "career": "Software Engineer",
             "time": "T6 2019 - Hiện tại"
         }
     ],
