@@ -12,7 +12,7 @@ a {
 
 .cv {
     width: 820px!important;
-    height: 1122px!important;
+    height: calc(1122px*2)!important;
 }
 
 .cv-left {
@@ -46,12 +46,4 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-}
-
-.skill-item {
-    font-weight: 700;
-    color: #263238;
-    border-radius: 20px;
-    background-color: white;
-    padding: 0.25rem 0.75rem;
 }

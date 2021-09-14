@@ -10,11 +10,11 @@
     "github": "https://github.com/censodev",
     "skillsTitle": "kỹ năng",
     "skills": [
-        "Java",
-        "Spring Boot",
-        "JS/TS",
-        "Angular",
-        "Docker"
+        "Ngôn ngữ: <b>Java, Javascript/Typescript,...</b>",
+        "Frameworks: <b>Spring Boot, Angular,...</b>",
+        "Dev tools: <b>Git, Docker, Maven,...</b>",
+        "Hệ thống: <b>Linux On-Premise, AWS Cloud</b>",
+        "Ngoại ngữ: <b>Tiếng Anh B1</b>"
     ],
     "eduTitle": "học vấn",
     "edu": [
@@ -45,7 +45,12 @@
             "name": "EVACCINE",
             "time": "T6 2021 - Hiện tại",
             "role": "Full-stack developer",
-            "des": "Hệ thống phân phối và quản lý vắc xin đặc biệt hỗ trợ cho chiến dịch tiêm chủng Covid-19 của CDC Hà Nội (Trung tâm Kiểm soát và Phòng ngừa Dịch bệnh)",
+            "roleDes": [
+                "Tham gia thiết kế hệ thống tầng ứng dụng",
+                "Tích hợp dịch vụ EPay (payment gateway, wallet, notifying, sms)",
+                "Tiển khai và hỗ trợ vận hành"
+            ],
+            "des": "Hệ thống phân phối và quản lý vắc xin đặc biệt hỗ trợ cho chiến dịch tiêm chủng Covid-19",
             "tech": [
                 "Spring",
                 "Angular",
@@ -54,13 +59,42 @@
             "team": "20 thành viên"
         },
         {
+            "name": "CALL CENTER CMS",
+            "time": "AUG 2021 - SEP 2021",
+            "role": "Back-end developer, Team leader",
+            "roleDes": [
+                "Xây dựng kiến trúc hạ tầng",
+                "Thiết kế kiến trúc hệ thống",
+                "Quản lý efforts, tasks, members",
+                "Phân tích yêu cầu khách hàng",
+                "Xây dựng Elasticsearch service"
+            ],
+            "des": "Module CMS quản lý hoặt động training nội bộ và tìm kiếm tài liệu trực tuyến",
+            "tech": [
+                "Spring",
+                "ASP.NET",
+                "Angular",
+                "Elasticsearch"
+            ],
+            "team": "3 thành viên"
+        },
+        {
             "name": "AIS MONITORING",
             "time": "T4 2021 - T8 2021",
             "role": "Full-stack developer",
+            "roleDes": [
+                "Xây dựng kiến trúc hạ tầng",
+                "Setup trạm TCP để nhận tín hiệu từ thiết bị AIS IoT",
+                "Thiết kế và phát triển phần lớn các dịch vụ phía Back-end",
+                "Làm việc với Google Map API để tối ưu hóa hiệu năng bản đồ",
+                "Phân tích yêu cầu khách hàng"
+            ],
             "des": "Giám sát hải trình tàu biển, quản lý kế hoạch tàu nạo vét,...",
             "tech": [
                 "Spring",
-                "Angular"
+                "Angular",
+                "AIS IoT",
+                "Docker"
             ],
             "team": "5 thành viên"
         },
@@ -68,11 +102,17 @@
             "name": "BDA PROJECT",
             "time": "T2 2021 - T4 2021",
             "role": "Back-end developer",
+            "roleDes": [
+                "Xây dựng kiến trúc hạ tầng",
+                "Xây dựng IO modules phục vụ streaming data trên hệ thống Hadoop",
+                "Làm việc với Hadoop HDFS, Kafka, Oracle DB"
+            ],
             "des": "Nghiên cứu, phân tích báo cáo kinh tế và các danh mục đầu tư công, an sinh xã hội... triển khai trên hệ thống Big Data",
             "tech": [
                 "Java",
                 "Hadoop",
-                "Tibco Spotfire"
+                "Tibco Spotfire",
+                "Docker"
             ],
             "team": "5 thành viên"
         },
@@ -80,10 +120,16 @@
             "name": "ECONTACT 2.0",
             "time": "T10 2019 - T2 2021",
             "role": "Back-end developer",
+            "roleDes": [
+                "Phát triển module Chat group & ticket statistics dashboard",
+                "Làm việc với Websocket, Zalo API/Webhook, Kafka",
+                "Triển khai thủ công các dịch vụ Java trên Linux VM"
+            ],
             "des": "Ứng dụng nội bộ quản trị tổng đài viễn thông",
             "tech": [
                 "Spring",
-                "Angular"
+                "Angular",
+                "Microservice"
             ],
             "team": "12 thành viên"
         }

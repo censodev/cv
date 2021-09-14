@@ -10,16 +10,16 @@
     "github": "https://github.com/censodev",
     "skillsTitle": "SKILLS",
     "skills": [
-        "Java",
-        "Spring Boot",
-        "JS/TS",
-        "Angular",
-        "Docker"
+        "Languages: <b>Java, Javascript/Typescript,...</b>",
+        "Frameworks: <b>Spring Boot, Angular,...</b>",
+        "Dev tools: <b>Git, Docker, Maven,...</b>",
+        "System: <b>Linux On-Premise, AWS Cloud</b>",
+        "Foreign language: <b>English B1</b>"
     ],
     "eduTitle": "education",
     "edu": [
         {
-            "school": "UNIVERSITY OF TRANSPORT AND COMMUNICATIONS",
+            "school": "UNIVERSITY OF TRANSPORT AND<br>COMMUNICATIONS",
             "spec": "Information Technology",
             "time": "AUG 2018 - PRESENT",
             "degree": ""
@@ -45,7 +45,12 @@
             "name": "EVACCINE",
             "time": "JUN 2021 - PRESENT",
             "role": "Full-stack developer",
-            "des": "Vaccine distribution and management system especially support for Covid-19 vaccination campaign of CDC Hanoi (Centers for Disease Control and Prevention)",
+            "roleDes": [
+                "Take part in designing system architecture on application layer",
+                "Integrate EPay services (payment gateway, wallet, notifying, sms) in to application",
+                "Deploy and support system operating"
+            ],
+            "des": "Vaccine distribution and management system especially support for Covid-19 vaccination campaigns",
             "tech": [
                 "Spring",
                 "Angular",
@@ -54,13 +59,42 @@
             "team": "20 members"
         },
         {
+            "name": "CALL CENTER CMS",
+            "time": "AUG 2021 - SEP 2021",
+            "role": "Back-end developer, Team leader",
+            "roleDes": [
+                "Build system infrastructure",
+                "Design system architecture",
+                "Manage efforts, tasks, members",
+                "Claim requirements of customers",
+                "Build Elasticsearch service for persisting and searching documents"
+            ],
+            "des": "CMS module for private training and public researching of a call center",
+            "tech": [
+                "Spring",
+                "ASP.NET",
+                "Angular",
+                "Elasticsearch"
+            ],
+            "team": "3 members"
+        },
+        {
             "name": "AIS MONITORING",
             "time": "APR 2021 - AUG 2021",
             "role": "Full-stack developer",
+            "roleDes": [
+                "Build system infrastructure",
+                "Setup TCP listener for AIS IoT device",
+                "Design and develop almost entire Back-end business services",
+                "Work with Google Map API in-depth to optimize map perfomance",
+                "Claim requirements of customers"
+            ],
             "des": "Monitor ship's voyage in seaports, manage dredgers plans,...",
             "tech": [
                 "Spring",
-                "Angular"
+                "Angular",
+                "AIS IoT",
+                "Docker"
             ],
             "team": "5 members"
         },
@@ -68,11 +102,17 @@
             "name": "BDA PROJECT",
             "time": "FEB 2021 - APR 2021",
             "role": "Back-end developer",
+            "roleDes": [
+                "Build system infrastructure and deploying",
+                "Build IO modules for streaming data on Hadoop system",
+                "Work with Hadoop HDFS, Kafka, Oracle DB"
+            ],
             "des": "Economy and social analyzing by implementing big data system",
             "tech": [
                 "Java",
                 "Hadoop",
-                "Tibco Spotfire"
+                "Tibco Spotfire",
+                "Docker"
             ],
             "team": "5 members"
         },
@@ -80,10 +120,16 @@
             "name": "ECONTACT 2.0",
             "time": "OCT 2019 - FEB 2021",
             "role": "Back-end developer",
+            "roleDes": [
+                "Develop module Chat group & ticket statistics dashboard",
+                "Work with Websocket, Zalo API/Webhook, Kafka",
+                "Traditional deploy Java services on Linux VM"
+            ],
             "des": "Internal application for telecom switchboard operators",
             "tech": [
                 "Spring",
-                "Angular"
+                "Angular",
+                "Microservice"
             ],
             "team": "12 members"
         }

@@ -2,7 +2,7 @@ const fetchCV = async () => {
     const urlSearchParams = new URLSearchParams(window.location.search)
     const params = Object.fromEntries(urlSearchParams.entries())
     const lang = params.lang ?? 'vn'
-    const res = await fetch(`/java-cv/data/cv.${lang}.json`)
+    const res = await fetch(`/data/cv.${lang}.json`)
     return await res.json()
 }
 
@@ -21,7 +21,7 @@ const render = data => {
     document.querySelector('#cvGithub').href = data.github
     document.querySelector('#cvSkillsTitle').innerText = data.skillsTitle
     document.querySelector('#cvSkills').innerHTML = data.skills.reduce((acc, sk) => {
-        return acc += `<div class="skill-item">${sk}</div>`
+        return acc += `<li style="font-weight: 300">${sk}</li>`
     }, '')
     document.querySelector('#cvEduTitle').innerText = data.eduTitle
     document.querySelector('#cvEdu').innerHTML = data.edu.reduce((acc, edu) => {
@@ -47,16 +47,29 @@ const render = data => {
     }, '')
     document.querySelector('#cvProjectsTitle').innerText = data.projectsTitle
     document.querySelector('#cvProjects').innerHTML = data.projects.reduce((acc, prj) => {
+        const roleDes = prj.roleDes.reduce((acc, des) => {
+            return acc += `<li style="font-weight: 300">${des}</li>`
+        }, '')
         return acc += `
         <div>
             <div class="d-flex">
                 <div><b class="text-uppercase">${prj.name}</b></div>
                 <div class="ms-auto"><small><b>${prj.time}</b></small></div>
             </div>
-            <div style="font-weight: 300;"><small>${prj.role}</small></div>
-            <div class="mt-1" style="font-weight: 300;"><small>
-                ${prj.des}<br>Tech: ${prj.tech.join(', ')}<br>Team: ${prj.team}
-            </small></div>
+            <div class="mt-1" style="font-weight: 300;">
+                <p><small>${prj.des}</small></p>
+                <p>
+                    <small>Tech: <b>${prj.tech.join(', ')}</b></small>
+                    <br>
+                    <small>Team: <b>${prj.team}</b></small>
+                </p>
+                <div>
+                    <small>Role: <b>${prj.role}</b></small>
+                    <small>
+                        <ul style="list-style: square">${roleDes}</ul>
+                    </small>
+                </div>
+            </div>
         </div>`
     }, '')
     
