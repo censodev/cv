@@ -2,7 +2,7 @@ const fetchCV = async () => {
     const urlSearchParams = new URLSearchParams(window.location.search)
     const params = Object.fromEntries(urlSearchParams.entries())
     const lang = params.lang ?? 'vn'
-    const res = await fetch(`/java-cv/data/cv.${lang}.json`)
+    const res = await fetch(`/data/cv.${lang}.json`)
     return await res.json()
 }
 
@@ -31,7 +31,11 @@ const render = data => {
                 <div><b class="text-uppercase">${edu.school}</b></div>
                 <div class="ms-auto"><small><b>${edu.time}</b></small></div>
             </div>
-            <div style="font-weight: 300;"><small>${edu.spec}</small></div>
+            <div style="font-weight: 300;">
+                <small>${edu.spec}</small>
+                <br>
+                <small>${edu.degree}</small>
+            </div>
         </div>`
     }, '')
     document.querySelector('#cvWorkExpTitle').innerText = data.workExpTitle
