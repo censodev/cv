@@ -37,6 +37,11 @@
             "company": "MIRAISOFT VIETNAM JSC",
             "career": "Software Engineer",
             "time": "JUNE 2019 - PRESENT"
+        },
+        {
+            "company": "Aptech Aprotrain",
+            "career": "Web developer, IT supporter, Teaching assistant",
+            "time": "FEB 2020 - JAN 2021"
         }
     ],
     "projectsTitle": "PROJECTS",
@@ -109,12 +114,30 @@
             ],
             "des": "Economy and social analyzing by implementing big data system",
             "tech": [
-                "Java",
+                "Spring",
                 "Hadoop",
                 "Tibco Spotfire",
                 "Docker"
             ],
             "team": "5 members"
+        },
+        {
+            "name": "LANDHUB ESTATE",
+            "time": "OCT 2020 - FEB 2021",
+            "role": "Back-end developer",
+            "roleDes": [
+                "Develop modules: authorization, posts indexing and searching, email broadcasting...",
+                "Setup production deployment"
+            ],
+            "des": "An CMS for managing estate posts and provides CRM",
+            "tech": [
+                "Laravel",
+                "Spring",
+                "Angular",
+                "Elasticsearch",
+                "Docker"
+            ],
+            "team": "11 members"
         },
         {
             "name": "ECONTACT 2.0",
@@ -132,6 +155,36 @@
                 "Microservice"
             ],
             "team": "12 members"
+        },
+        {
+            "name": "MIRAI CMS",
+            "time": "JUN 2019 - OCT 2019",
+            "role": "Back-end developer",
+            "roleDes": [
+                "Develop features: chatbox and social network interactions using Firebase"
+            ],
+            "des": "A private CMS",
+            "tech": [
+                "Laravel",
+                "Angular",
+                "React Native",
+                "Firebase"
+            ],
+            "team": "7 members"
+        },
+        {
+            "name": "APTECH LANDING PAGES",
+            "time": "FEB 2020 - JAN 2021",
+            "role": "Web developer",
+            "roleDes": [
+                "Work with designer to develop dynamic landing pages"
+            ],
+            "des": "A series of landing pages running enrollment campaigns, advertising, IT courses, minigames and more",
+            "tech": [
+                "PHP",
+                "HTML/CSS/JS"
+            ],
+            "team": "2 members"
         }
     ]
 }
