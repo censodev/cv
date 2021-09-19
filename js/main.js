@@ -2,7 +2,7 @@ const fetchCV = async () => {
     const urlSearchParams = new URLSearchParams(window.location.search)
     const params = Object.fromEntries(urlSearchParams.entries())
     const lang = params.lang ?? 'en'
-    const res = await fetch(`/java-cv/data/cv.${lang}.json`)
+    const res = await fetch(`data/cv.${lang}.json`)
     return await res.json()
 }
 
