@@ -55,7 +55,7 @@
                 "Integrate EPay services (payment gateway, wallet, notifying, sms) in to application",
                 "Deploy and support system operating"
             ],
-            "des": "Vaccine distribution and management system especially support for Covid-19 vaccination campaigns",
+            "des": "Vaccine injection management system especially support for Covid-19 vaccination campaigns",
             "tech": [
                 "Spring",
                 "Angular",
