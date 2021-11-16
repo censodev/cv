@@ -10,85 +10,127 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="d-flex justify-content-center">
+    <div id="app" class="d-flex justify-content-center">
         <div class="cv d-flex">
             <div class="cv-left text-white">
                 <div class="cv-info-header text-center py-3">
-                    <h4><b id="cvFullName" class="text-uppercase"></b></h3>
-                    <i id="cvCareer"></i>
+                    <h4><b class="text-uppercase">{{cv.fullName}}</b></h3>
+                    <i>{{cv.career}}</i>
                 </div>
                 <div class="cv-info-body px-3 py-4 d-flex flex-column gap-2">
                     <div class="d-flex align-items-center">
                         <i class="bi bi-calendar-week"></i>
-                        <span class="ps-2" id="cvBirthDate"></span>
+                        <span class="ps-2">{{cv.birthDate}}</span>
                     </div>
                     <div class="d-flex align-items-center">
                         <i class="bi bi-gender-ambiguous"></i>
-                        <span class="ps-2" id="cvGender"></span>
+                        <span class="ps-2">{{cv.gender}}</span>
                     </div>
                     <div class="d-flex align-items-center">
                         <i class="bi bi-telephone"></i>
-                        <a class="ps-2 text-white" id="cvPhone"></a>
+                        <a class="ps-2 text-white" :href="'tel:' + cv.phone">{{cv.phone}}</a>
                         <i style="font-size: 10px;" class="bi bi-box-arrow-up-right ps-1"></i>
                     </div>
                     <div class="d-flex align-items-center">
                         <i class="bi bi-envelope"></i>
-                        <a class="ps-2 text-white" id="cvMail"></a>
+                        <a class="ps-2 text-white" :href="'mailto:' + cv.mail">{{cv.mail}}</a>
                         <i style="font-size: 10px;" class="bi bi-box-arrow-up-right ps-1"></i>
                     </div>
                     <div class="d-flex align-items-center">
                         <i class="bi bi-geo-alt"></i>
-                        <span class="ps-2" id="cvAddress"></span>
+                        <span class="ps-2">{{cv.address}}</span>
                     </div>
                     <div class="d-flex align-items-center">
                         <i class="bi bi-github"></i>
-                        <a class="ps-2 text-white" id="cvGithub"></a>
+                        <a class="ps-2 text-white" :href="cv.github">{{cv.github}}</a>
                         <i style="font-size: 10px;" class="bi bi-box-arrow-up-right ps-1"></i>
                     </div>
                 </div>
-                <!-- <div class="cv-skills px-3">
-                    <h5><b id="cvSkillsTitle" class="text-uppercase"></b></h5>
-                    <div class="d-flex flex-wrap gap-2" id="cvSkills"></div>
-                </div> -->
             </div>
             <div class="cv-right p-3 flex-grow-1">
                 <div class="cat-title">
                     <div class="cat-icon">
                         <i class="bi bi-book-fill"></i>
                     </div>
-                    <h5 class="ps-3 m-0"><b id="cvEduTitle" class="text-uppercase"></b></h5>
+                    <h5 class="ps-3 m-0"><b class="text-uppercase">{{cv.eduTitle}}</b></h5>
                 </div>
-                <div id="cvEdu" class="d-flex flex-column gap-3 mt-3"></div>
+                <div class="d-flex flex-column gap-3 mt-3">
+                    <div v-for="edu in cv.edu">
+                        <div class="d-flex">
+                            <div><b class="text-uppercase" v-html="edu.school"></b></div>
+                            <div class="ms-auto"><small><b>{{edu.time}}</b></small></div>
+                        </div>
+                        <div style="font-weight: 300;">
+                            <small>{{edu.spec}}</small>
+                            <br>
+                            <small>{{edu.degree}}</small>
+                        </div>
+                    </div>
+                </div>
                 <div class="cat-title mt-5">
                     <div class="cat-icon">
                         <i class="bi bi-wallet-fill"></i>
                     </div>
-                    <h5 class="ps-3 m-0"><b id="cvWorkExpTitle" class="text-uppercase"></b></h5>
+                    <h5 class="ps-3 m-0"><b class="text-uppercase">{{cv.workExpTitle}}</b></h5>
                 </div>
-                <div id="cvWorkExp" class="d-flex flex-column gap-3 mt-3"></div>
+                <div class="d-flex flex-column gap-3 mt-3">
+                    <div v-for="exp in cv.workExp">
+                        <div class="d-flex">
+                            <div><b class="text-uppercase">{{exp.company}}</b></div>
+                            <div class="ms-auto"><small><b>{{exp.time}}</b></small></div>
+                        </div>
+                        <div style="font-weight: 300;"><small>{{exp.career}}</small></div>
+                    </div>
+                </div>
                 <div class="cat-title mt-5">
                     <div class="cat-icon">
                         <i class="bi bi-pen-fill"></i>
                     </div>
-                    <h5 class="ps-3 m-0"><b id="cvSkillsTitle" class="text-uppercase"></b></h5>
+                    <h5 class="ps-3 m-0"><b class="text-uppercase">{{cv.skillsTitle}}</b></h5>
                 </div>
                 <div class="d-flex flex-column gap-3 mt-3">
-                    <ul id="cvSkills" style="list-style: square"></ul>
+                    <ul id="cvSkills" style="list-style: square">
+                        <li v-for="sk in cv.skills" style="font-weight: 300" v-html="sk"></li>
+                    </ul>
                 </div>
                 <div class="cat-title mt-5">
                     <div class="cat-icon">
                         <i class="bi bi-code"></i>
                     </div>
-                    <h5 class="ps-3 m-0"><b id="cvProjectsTitle" class="text-uppercase"></b></h5>
+                    <h5 class="ps-3 m-0"><b class="text-uppercase">{{cv.projectsTitle}}</b></h5>
                 </div>
-                <div id="cvProjects" class="d-flex flex-column gap-4 mt-3"></div>
+                <div id="cvProjects" class="d-flex flex-column gap-4 mt-3">
+                    <div v-for="prj in cv.projects">
+                        <div class="d-flex">
+                            <div><b class="text-uppercase">{{prj.name}}</b></div>
+                            <div class="ms-auto"><small><b>{{prj.time}}</b></small></div>
+                        </div>
+                        <div class="mt-1" style="font-weight: 300;">
+                            <p><small>{{prj.des}}</small></p>
+                            <p>
+                                <small>Tech: <b>{{prj.tech.join(', ')}}</b></small>
+                                <br>
+                                <small>Team: <b>{{prj.team}}</b></small>
+                            </p>
+                            <div>
+                                <small>Role: <b>{{prj.role}}</b></small>
+                                <small>
+                                    <ul style="list-style: square">
+                                        <li v-for="prjRole in prj.roleDes" style="font-weight: 300">{{prjRole}}</li>
+                                    </ul>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
 </body>
 </html>
