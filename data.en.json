@@ -10,9 +10,9 @@
     "github": "https://github.com/censodev",
     "skillsTitle": "SKILLS",
     "skills": [
-        "Languages: <b>Java, Javascript/Typescript,...</b>",
-        "Frameworks: <b>Spring Boot, Angular,...</b>",
-        "Dev tools: <b>Git, Docker, Maven,...</b>",
+        "Languages: <b>Java, Javascript/Typescript, PHP, ...</b>",
+        "Frameworks: <b>Spring, Angular, Laravel, ...</b>",
+        "Dev tools: <b>Git, Docker, ...</b>",
         "System: <b>Linux On-Premise, AWS Cloud</b>",
         "Foreign language: <b>English B1</b>"
     ],
@@ -36,7 +36,7 @@
         {
             "company": "MIRAISOFT VIETNAM JSC",
             "career": "Software Engineer",
-            "time": "JUNE 2019 - PRESENT"
+            "time": "JUNE 2019 - OCT 2021"
         },
         {
             "company": "Aptech Aprotrain",
@@ -48,14 +48,14 @@
     "projects": [
         {
             "name": "EVACCINE",
-            "time": "JUN 2021 - PRESENT",
+            "time": "JUN 2021 - OCT 2021",
             "role": "Full-stack developer",
             "roleDes": [
                 "Take part in designing system architecture on application layer",
                 "Integrate EPay services (payment gateway, wallet, notifying, sms) in to application",
                 "Deploy and support system operating"
             ],
-            "des": "Vaccine distribution and management system especially support for Covid-19 vaccination campaigns",
+            "des": "Vaccine injection management system especially support for Covid-19 vaccination campaigns",
             "tech": [
                 "Spring",
                 "Angular",
@@ -65,7 +65,7 @@
         },
         {
             "name": "CALL CENTER CMS",
-            "time": "AUG 2021 - SEP 2021",
+            "time": "AUG 2021 - OCT 2021",
             "role": "Back-end developer, Team leader",
             "roleDes": [
                 "Build system infrastructure",
