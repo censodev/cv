@@ -84,14 +84,14 @@
             "team": "3 members"
         },
         {
-            "name": "AIS MONITORING",
+            "name": "AIS MONITOR",
             "time": "APR 2021 - AUG 2021",
             "role": "Full-stack developer",
             "roleDes": [
                 "Build system infrastructure",
                 "Setup TCP listener for AIS IoT device",
                 "Design and develop almost entire Back-end business services",
-                "Work with Google Map API in-depth to optimize map perfomance",
+                "Work with Google Map API in-depth to optimize map performance",
                 "Claim requirements of customers"
             ],
             "des": "Monitor ship's voyage in seaports, manage dredgers plans,...",
