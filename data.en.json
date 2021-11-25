@@ -52,7 +52,7 @@
             "role": "Full-stack developer",
             "roleDes": [
                 "Take part in designing system architecture on application layer",
-                "Integrate EPay services (payment gateway, wallet, notifying, sms) in to application",
+                "Integrate EPay services (payment gateway, wallet, notifying, SMS) in to application",
                 "Deploy and support system operating"
             ],
             "des": "Vaccine injection management system especially support for Covid-19 vaccination campaigns",
@@ -112,7 +112,7 @@
                 "Build IO modules for streaming data on Hadoop system",
                 "Work with Hadoop HDFS, Kafka, Oracle DB"
             ],
-            "des": "Economy and social analyzing by implementing big data system",
+            "des": "Economy and social data analyzing by implementing big data system",
             "tech": [
                 "Spring",
                 "Hadoop",
@@ -146,7 +146,7 @@
             "roleDes": [
                 "Develop module Chat group & ticket statistics dashboard",
                 "Work with Websocket, Zalo API/Webhook, Kafka",
-                "Traditional deploy Java services on Linux VM"
+                "Deploy and monitor Java services on Linux VM"
             ],
             "des": "Internal application for telecom switchboard operators",
             "tech": [
