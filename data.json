@@ -78,7 +78,7 @@
                 "startDtYr": 2021,
                 "endDtMo": 10,
                 "endDtYr": 2021,
-                "role": "Full-stack developer",
+                "role": "Associate Solution Architect, Back-end Engineer",
                 "roleDes": [
                     "Take part in designing system architecture on application layer",
                     "Integrate EPay services (payment gateway, wallet, notifying, SMS) in to application",
@@ -93,12 +93,12 @@
                 "team": "20 members"
             },
             {
-                "name": "CALL CENTER CMS",
+                "name": "CALL CENTER LIBRARY",
                 "startDtMo": 8,
                 "startDtYr": 2021,
                 "endDtMo": 10,
                 "endDtYr": 2021,
-                "role": "Back-end developer, Team leader",
+                "role": "Back-end Engineer, Team Leader",
                 "roleDes": [
                     "Build system infrastructure",
                     "Design system architecture",
@@ -106,7 +106,7 @@
                     "Claim requirements of customers",
                     "Build Elasticsearch service for persisting and searching documents"
                 ],
-                "des": "CMS module for private training and public researching of a call center",
+                "des": "CMS module for private training and public researching of a call center system",
                 "tech": [
                     "Spring",
                     "ASP.NET",
@@ -117,11 +117,11 @@
             },
             {
                 "name": "AIS MONITOR",
-                "startDtMo": 4,
+                "startDtMo": 2,
                 "startDtYr": 2021,
                 "endDtMo": 8,
                 "endDtYr": 2021,
-                "role": "Full-stack developer",
+                "role": "Full-stack Engineer",
                 "roleDes": [
                     "Build system infrastructure",
                     "Setup TCP listener for AIS IoT device",
@@ -139,38 +139,17 @@
                 "team": "5 members"
             },
             {
-                "name": "BDA PROJECT",
-                "startDtMo": 2,
-                "startDtYr": 2021,
-                "endDtMo": 4,
-                "endDtYr": 2021,
-                "role": "Back-end developer",
-                "roleDes": [
-                    "Build system infrastructure and deploying",
-                    "Build IO modules for streaming data on Hadoop system",
-                    "Work with Hadoop HDFS, Kafka, Oracle DB"
-                ],
-                "des": "Economy and social data analyzing by implementing big data system",
-                "tech": [
-                    "Spring",
-                    "Hadoop",
-                    "Tibco Spotfire",
-                    "Docker"
-                ],
-                "team": "5 members"
-            },
-            {
                 "name": "LANDHUB ESTATE",
                 "startDtMo": 10,
                 "startDtYr": 2020,
                 "endDtMo": 2,
                 "endDtYr": 2021,
-                "role": "Back-end developer",
+                "role": "Back-end Engineer",
                 "roleDes": [
                     "Develop modules: authorization, posts indexing and searching, email broadcasting...",
                     "Setup production deployment"
                 ],
-                "des": "An CMS for managing estate posts and provides CRM",
+                "des": "A real estates portal",
                 "tech": [
                     "Laravel",
                     "Spring",
@@ -184,10 +163,9 @@
                 "name": "ECONTACT 2.0",
                 "startDtMo": 10,
                 "startDtYr": 2019,
-                "endDtMo": 2,
-                "endDtYr": 2021,
-                "time": "OCT 2019 - FEB 2021",
-                "role": "Back-end developer",
+                "endDtMo": 10,
+                "endDtYr": 2020,
+                "role": "Back-end Engineer",
                 "roleDes": [
                     "Develop module Chat group & ticket statistics dashboard",
                     "Work with Websocket, Zalo API/Webhook, Kafka",
@@ -202,16 +180,16 @@
                 "team": "12 members"
             },
             {
-                "name": "MIRAI CMS",
+                "name": "MIRAI SOCIAL NETWORK",
                 "startDtMo": 6,
                 "startDtYr": 2019,
                 "endDtMo": 10,
                 "endDtYr": 2019,
-                "role": "Back-end developer",
+                "role": "Web Developer",
                 "roleDes": [
                     "Develop features: chatbox and social network interactions using Firebase"
                 ],
-                "des": "A private CMS",
+                "des": "A private social network for company",
                 "tech": [
                     "Laravel",
                     "Angular",
@@ -226,7 +204,7 @@
                 "startDtYr": 2019,
                 "endDtMo": 3,
                 "endDtYr": 2021,
-                "role": "Web developer",
+                "role": "Web Developer",
                 "roleDes": [
                     "Work with designer to develop dynamic landing pages"
                 ],
