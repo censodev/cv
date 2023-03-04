@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "fullName": "Phuong Bui Viet",
+        "avatar": null,
+        "career": "Software Engineer",
+        "birthDate": null,
+        "gender": "Male",
+        "phone": "0964603264",
+        "mail": "buiphuongaptutc@gmail.com",
+        "address": "Hanoi, Vietnam",
+        "github": "https://github.com/censodev",
+        "skills": [
+            "Languages: <b>Java, Javascript/Typescript, PHP, ...</b>",
+            "Frameworks: <b>Spring, Angular, Laravel, ...</b>",
+            "Dev tools: <b>Git, Docker, ...</b>",
+            "System: <b>Linux On-Premise, AWS Cloud</b>",
+            "Foreign language: <b>English B2</b>"
+        ],
+        "edu": [
+            {
+                "school": "UNIVERSITY OF TRANSPORT AND<br>COMMUNICATIONS",
+                "spec": "Information Technology",
+                "startDtMo": 8,
+                "startDtYr": 2018,
+                "endDtMo": 7,
+                "endDtYr": 2022,
+                "degree": "Engineer's degree",
+                "grade": "3.53 GPA"
+            },
+            {
+                "school": "Aptech Aprotrain",
+                "spec": "Computer Software Engineering",
+                "startDtMo": 8,
+                "startDtYr": 2018,
+                "endDtMo": 12,
+                "endDtYr": 2021,
+                "degree": "ADSE - Advanced Diploma In Software Engineering",
+                "grade": "Credit"
+            }
+        ],
+        "exp": [
+            {
+                "title": "Senior Software Engineer",
+                "empType": "Full-time",
+                "company": "FPT Software",
+                "startDtMo": 12,
+                "startDtYr": 2021,
+                "endDtMo": null,
+                "endDtYr": null,
+                "location": "Hanoi, Vietnam"
+            },
+            {
+                "title": "Software Engineer",
+                "empType": "Full-time",
+                "company": "Mirai Vietnam Software",
+                "startDtMo": 6,
+                "startDtYr": 2019,
+                "endDtMo": 10,
+                "endDtYr": 2021,
+                "location": "Hanoi, Vietnam"
+            },
+            {
+                "title": "Web Developer",
+                "empType": "Part-time",
+                "company": "Aptech Aprotrain",
+                "startDtMo": 9,
+                "startDtYr": 2019,
+                "endDtMo": 3,
+                "endDtYr": 2021,
+                "location": "Hanoi, Vietnam"
+            }
+        ],
+        "projects": [
+            {
+                "name": "EVACCINE",
+                "startDtMo": 6,
+                "startDtYr": 2021,
+                "endDtMo": 10,
+                "endDtYr": 2021,
+                "role": "Full-stack developer",
+                "roleDes": [
+                    "Take part in designing system architecture on application layer",
+                    "Integrate EPay services (payment gateway, wallet, notifying, SMS) in to application",
+                    "Deploy and support system operating"
+                ],
+                "des": "Vaccine injection management system especially support for Covid-19 vaccination campaigns",
+                "tech": [
+                    "Spring",
+                    "Angular",
+                    "React Native"
+                ],
+                "team": "20 members"
+            },
+            {
+                "name": "CALL CENTER CMS",
+                "startDtMo": 8,
+                "startDtYr": 2021,
+                "endDtMo": 10,
+                "endDtYr": 2021,
+                "role": "Back-end developer, Team leader",
+                "roleDes": [
+                    "Build system infrastructure",
+                    "Design system architecture",
+                    "Manage efforts, tasks, members",
+                    "Claim requirements of customers",
+                    "Build Elasticsearch service for persisting and searching documents"
+                ],
+                "des": "CMS module for private training and public researching of a call center",
+                "tech": [
+                    "Spring",
+                    "ASP.NET",
+                    "Angular",
+                    "Elasticsearch"
+                ],
+                "team": "3 members"
+            },
+            {
+                "name": "AIS MONITOR",
+                "startDtMo": 4,
+                "startDtYr": 2021,
+                "endDtMo": 8,
+                "endDtYr": 2021,
+                "role": "Full-stack developer",
+                "roleDes": [
+                    "Build system infrastructure",
+                    "Setup TCP listener for AIS IoT device",
+                    "Design and develop almost entire Back-end business services",
+                    "Work with Google Map API in-depth to optimize map performance",
+                    "Claim requirements of customers"
+                ],
+                "des": "Monitor ship's voyage in seaports, manage dredgers plans,...",
+                "tech": [
+                    "Spring",
+                    "Angular",
+                    "AIS IoT",
+                    "Docker"
+                ],
+                "team": "5 members"
+            },
+            {
+                "name": "BDA PROJECT",
+                "startDtMo": 2,
+                "startDtYr": 2021,
+                "endDtMo": 4,
+                "endDtYr": 2021,
+                "role": "Back-end developer",
+                "roleDes": [
+                    "Build system infrastructure and deploying",
+                    "Build IO modules for streaming data on Hadoop system",
+                    "Work with Hadoop HDFS, Kafka, Oracle DB"
+                ],
+                "des": "Economy and social data analyzing by implementing big data system",
+                "tech": [
+                    "Spring",
+                    "Hadoop",
+                    "Tibco Spotfire",
+                    "Docker"
+                ],
+                "team": "5 members"
+            },
+            {
+                "name": "LANDHUB ESTATE",
+                "startDtMo": 10,
+                "startDtYr": 2020,
+                "endDtMo": 2,
+                "endDtYr": 2021,
+                "role": "Back-end developer",
+                "roleDes": [
+                    "Develop modules: authorization, posts indexing and searching, email broadcasting...",
+                    "Setup production deployment"
+                ],
+                "des": "An CMS for managing estate posts and provides CRM",
+                "tech": [
+                    "Laravel",
+                    "Spring",
+                    "Angular",
+                    "Elasticsearch",
+                    "Docker"
+                ],
+                "team": "11 members"
+            },
+            {
+                "name": "ECONTACT 2.0",
+                "startDtMo": 10,
+                "startDtYr": 2019,
+                "endDtMo": 2,
+                "endDtYr": 2021,
+                "time": "OCT 2019 - FEB 2021",
+                "role": "Back-end developer",
+                "roleDes": [
+                    "Develop module Chat group & ticket statistics dashboard",
+                    "Work with Websocket, Zalo API/Webhook, Kafka",
+                    "Deploy and monitor Java services on Linux VM"
+                ],
+                "des": "Internal application for telecom switchboard operators",
+                "tech": [
+                    "Spring",
+                    "Angular",
+                    "Microservice"
+                ],
+                "team": "12 members"
+            },
+            {
+                "name": "MIRAI CMS",
+                "startDtMo": 6,
+                "startDtYr": 2019,
+                "endDtMo": 10,
+                "endDtYr": 2019,
+                "role": "Back-end developer",
+                "roleDes": [
+                    "Develop features: chatbox and social network interactions using Firebase"
+                ],
+                "des": "A private CMS",
+                "tech": [
+                    "Laravel",
+                    "Angular",
+                    "React Native",
+                    "Firebase"
+                ],
+                "team": "7 members"
+            },
+            {
+                "name": "APTECH LANDING PAGES",
+                "startDtMo": 9,
+                "startDtYr": 2019,
+                "endDtMo": 3,
+                "endDtYr": 2021,
+                "role": "Web developer",
+                "roleDes": [
+                    "Work with designer to develop dynamic landing pages"
+                ],
+                "des": "A series of landing pages running enrollment campaigns, advertising, IT courses, minigames and more",
+                "tech": [
+                    "PHP",
+                    "HTML/CSS/JS"
+                ],
+                "team": "2 members"
+            }
+        ]
+    }
+]
