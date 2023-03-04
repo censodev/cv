@@ -12,9 +12,8 @@ const App = {
     },
     methods: {
         async fetchCV(id) {
-            const res = await fetch(`data.json`)
-            const cvs = await res.json()
-            return cvs.find(cv => cv.id == id)
+            const res = await fetch(`data.${id}.json`)
+            return await res.json()
         },
         fmtDate(year, month) {
             const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
