@@ -1,7 +1,7 @@
 export default {
     props: ['icon', 'title'],
     setup(props) {},
-    template: `
+    template: /*html*/`
         <div>
             <div class="cat-title">
                 <div class="cat-icon">

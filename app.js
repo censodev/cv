@@ -44,7 +44,7 @@ export default {
             fmtDuration,
         }
     },
-    template: `
+    template: /*html*/`
         <div class="cv d-flex flex-column">
             <!-- CV HEADER - START -->
             <CvHeader :cv="cv" />

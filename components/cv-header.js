@@ -2,7 +2,7 @@ export default {
     props: ['cv'],
     setup(props) {
     },
-    template: `
+    template: /*html*/`
         <div class="cv-header text-white d-flex">
             <div class="cv-header-1 d-flex flex-column justify-content-center py-3 px-4">
                 <h4 class="fw-bold text-uppercase text-center">{{cv.fullName}}</h4>
