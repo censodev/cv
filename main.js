@@ -14,12 +14,14 @@ const App = {
         async fetchCV(id) {
             const res = await fetch(`data.json`)
             const cvs = await res.json()
-            return cvs.find(cv => cv.id === id)
+            return cvs.find(cv => cv.id == id)
         },
         fmtDate(year, month) {
             const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
-            if (!year && !month)
+            if (!year)
                 return 'present'
+            else if (!month)
+                return year
             return `${months[month - 1]} ${year}`
         },
         fmtDuration(startYear, startMonth, endYear, endMonth) {
