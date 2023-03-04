@@ -15,6 +15,7 @@
 <body>
     <div id="app" class="d-flex justify-content-center">
         <div class="cv d-flex flex-column">
+            <!-- CV HEADER - START -->
             <div class="cv-header text-white d-flex">
                 <div class="cv-header-1 d-flex flex-column justify-content-center py-3 px-4">
                     <h4 class="fw-bold text-uppercase text center">{{cv.fullName}}</h3>
@@ -50,12 +51,15 @@
                     </div>
                 </div>
             </div>
+            <!-- CV HEADER - END -->
+            <!-- CV BODY - START -->
             <div class="cv-body p-5 flex-grow-1">
+                <!-- EDUCATION - START -->
                 <div class="cat-title">
                     <div class="cat-icon">
                         <i class="bi bi-book-fill"></i>
                     </div>
-                    <h5 class="ps-3 m-0"><b class="text-uppercase">education</b></h5>
+                    <h5 class="ps-3 m-0 fw-bold">EDUCATION</h5>
                 </div>
                 <div class="d-flex flex-column gap-3 mt-3">
                     <div v-for="edu in cv.edu">
@@ -65,15 +69,17 @@
                         </div>
                         <div style="font-weight: 300;">
                             <small>{{edu.degree}}, {{edu.spec}}</small>
-                            <small class="d-block" v-if="edu.grade">Grade: {{edu.grade}}</small>
+                            <small class="d-block text-secondary" v-if="edu.grade">Grade: {{edu.grade}}</small>
                         </div>
                     </div>
                 </div>
+                <!-- EDUCATION - END -->
+                <!-- EXPERIENCE - START -->
                 <div class="cat-title mt-5">
                     <div class="cat-icon">
                         <i class="bi bi-wallet-fill"></i>
                     </div>
-                    <h5 class="ps-3 m-0"><b class="text-uppercase">experience</b></h5>
+                    <h5 class="ps-3 m-0 fw-bold">EXPERIENCE</h5>
                 </div>
                 <div class="d-flex flex-column gap-3 mt-3">
                     <div v-for="exp in cv.exp">
@@ -85,22 +91,26 @@
                         <div style="font-weight: 300;" class="text-secondary"><small>{{exp.location}}</small></div>
                     </div>
                 </div>
+                <!-- EXPERIENCE - END -->
+                <!-- SKILLS - START -->
                 <div class="cat-title mt-5">
                     <div class="cat-icon">
                         <i class="bi bi-pen-fill"></i>
                     </div>
-                    <h5 class="ps-3 m-0"><b class="text-uppercase">skills</b></h5>
+                    <h5 class="ps-3 m-0 fw-bold">SKILLS</h5>
                 </div>
                 <div class="d-flex flex-column gap-3 mt-3">
                     <ul id="cvSkills" style="list-style: square">
                         <li v-for="sk in cv.skills" style="font-weight: 300" v-html="sk"></li>
                     </ul>
                 </div>
+                <!-- SKILLS - END -->
+                <!-- PROJECTS - START -->
                 <div class="cat-title mt-5">
                     <div class="cat-icon">
                         <i class="bi bi-code"></i>
                     </div>
-                    <h5 class="ps-3 m-0"><b class="text-uppercase">projects</b></h5>
+                    <h5 class="ps-3 m-0 fw-bold">PROJECTS</h5>
                 </div>
                 <div id="cvProjects" class="d-flex flex-column gap-4 mt-3">
                     <div v-for="prj in cv.projects">
@@ -108,7 +118,7 @@
                             <div><b class="text-uppercase">{{prj.name}}</b></div>
                             <div class="ms-auto"><small><b class="text-uppercase">{{fmtDate(prj.startDtYr, prj.startDtMo)}} - {{fmtDate(prj.endDtYr, prj.endDtMo)}}</b></small></div>
                         </div>
-                        <div class="mt-1" style="font-weight: 300;">
+                        <div class="mt-2 ms-4 ps-2 border-start border-3" style="font-weight: 300;">
                             <p><small>{{prj.des}}</small></p>
                             <p>
                                 <small>Tech: <b>{{prj.tech.join(', ')}}</b></small>
@@ -126,7 +136,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- PROJECTS - END -->
             </div>
+            <!-- CV BODY - END -->
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
