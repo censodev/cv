@@ -15,19 +15,19 @@ a {
     height: calc(1122px*3)!important;
 }
 
-.cv-left {
+.cv-header {
     background-color: #37474F;
 }
 
-.cv-right {
+.cv-body {
     background-color: white;
 }
 
-.cv-info-header {
+.cv-header-1 {
     background-color: #263238;
 }
 
-.cv-info-body {
+.cv-header-2 {
     font-size: 14px;
 }
 

@@ -14,13 +14,13 @@
 </head>
 <body>
     <div id="app" class="d-flex justify-content-center">
-        <div class="cv d-flex">
-            <div class="cv-left text-white">
-                <div class="cv-info-header text-center py-3">
-                    <h4><b class="text-uppercase">{{cv.fullName}}</b></h3>
-                    <i>{{cv.career}}</i>
+        <div class="cv d-flex flex-column">
+            <div class="cv-header text-white d-flex">
+                <div class="cv-header-1 d-flex flex-column justify-content-center py-3 px-4">
+                    <h4 class="fw-bold text-uppercase text center">{{cv.fullName}}</h3>
+                    <i class="text-center">{{cv.career}}</i>
                 </div>
-                <div class="cv-info-body px-3 py-4 d-flex flex-column gap-2">
+                <div class="cv-header-2 px-3 py-4 d-flex flex-column gap-2">
                     <div class="d-flex align-items-center" v-if="cv.birthDate">
                         <i class="bi bi-calendar-week"></i>
                         <span class="ps-2">{{cv.birthDate}}</span>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cv-right p-3 flex-grow-1">
+            <div class="cv-body p-5 flex-grow-1">
                 <div class="cat-title">
                     <div class="cat-icon">
                         <i class="bi bi-book-fill"></i>
