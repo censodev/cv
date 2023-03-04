@@ -8,12 +8,12 @@
     "mail": "nguyengiangsc96@gmail.com",
     "address": "Hanoi, Vietnam",
     "github": "",
-    "skills": [
-        "Languages: <b>PHP, Javascript</b>",
-        "Frameworks: <b>Laravel, VueJS/NuxtJS</b>",
-        "Databases: <b>MySQL, PostgreSQL</b>",
-        "Dev tools: <b>Git, Composer, NPM, Jetbrains IDE, ...</b>"
-    ],
+    "skills": {
+        "Language": "PHP, Javascript",
+        "Frameworks": "Laravel, VueJS/NuxtJS",
+        "Databases": "MySQL, PostgreSQL",
+        "Dev tools": "Git, Composer, NPM, Jetbrains IDE, ..."
+    },
     "edu": [
         {
             "school": "Posts and Telecommunications Institute of Technology",

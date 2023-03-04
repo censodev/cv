@@ -8,14 +8,14 @@
     "mail": "buiphuongaptutc@gmail.com",
     "address": "Hanoi, Vietnam",
     "github": "https://github.com/censodev",
-    "skills": [
-        "Languages: <b>Java, Javascript/Typescript, PHP, ...</b>",
-        "Frameworks: <b>Spring, Angular, ...</b>",
-        "Dev/Ops tools: <b>Git, Maven, Docker, K8s, CI/CD, ...</b>",
-        "Infrastructures: <b>Linux On-Premise, AWS Cloud</b>",
-        "Databases: <b>MySQL, PostgreSQL, ...</b>",
-        "Foreign language: <b>English B2</b>"
-    ],
+    "skills": {
+        "Languages": "Java, Javascript/Typescript, PHP, ...",
+        "Frameworks": "Spring, Angular, ...",
+        "Dev/Ops tools": "Git, Maven, Docker, K8s, CI/CD, ...",
+        "Infrastructures": "Linux On-Premise, AWS Cloud",
+        "Databases": "MySQL, PostgreSQL, ...",
+        "Foreign language": "English B2"
+    },
     "edu": [
         {
             "school": "UNIVERSITY OF TRANSPORT AND COMMUNICATIONS",

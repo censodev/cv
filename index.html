@@ -67,7 +67,7 @@
                             <div><b class="text-uppercase" v-html="edu.school"></b></div>
                             <div class="ms-auto"><small><b class="text-uppercase">{{fmtDate(edu.startDtYr, edu.startDtMo)}} - {{fmtDate(edu.endDtYr, edu.endDtMo)}}</b></small></div>
                         </div>
-                        <div style="font-weight: 300;">
+                        <div class="fw-light">
                             <small>{{edu.degree}}, {{edu.spec}}</small>
                             <small class="d-block text-secondary" v-if="edu.grade">Grade: {{edu.grade}}</small>
                         </div>
@@ -87,8 +87,8 @@
                             <div><b class="text-uppercase">{{exp.title}}</b></div>
                             <div class="ms-auto"><small><b class="text-uppercase">{{fmtDate(exp.startDtYr, exp.startDtMo)}} - {{fmtDate(exp.endDtYr, exp.endDtMo)}}</b></small></div>
                         </div>
-                        <div style="font-weight: 300;"><small>{{exp.company}} • {{exp.empType}} • {{fmtDuration(exp.startDtYr, exp.startDtMo, exp.endDtYr, exp.endDtMo)}}</small></div>
-                        <div style="font-weight: 300;" class="text-secondary"><small>{{exp.location}}</small></div>
+                        <div class="fw-light"><small>{{exp.company}} • {{exp.empType}} • {{fmtDuration(exp.startDtYr, exp.startDtMo, exp.endDtYr, exp.endDtMo)}}</small></div>
+                        <div class="text-secondary fw-light"><small>{{exp.location}}</small></div>
                     </div>
                 </div>
                 <!-- EXPERIENCE - END -->
@@ -101,7 +101,7 @@
                 </div>
                 <div class="d-flex flex-column gap-3 mt-3">
                     <ul id="cvSkills" style="list-style: square">
-                        <li v-for="sk in cv.skills" style="font-weight: 300" v-html="sk"></li>
+                        <li v-for="skv, skk in cv.skills" class="fw-light">{{skk}}: <b>{{skv}}</b></li>
                     </ul>
                 </div>
                 <!-- SKILLS - END -->
@@ -118,7 +118,7 @@
                             <div><b class="text-uppercase">{{prj.name}}</b></div>
                             <div class="ms-auto"><small><b class="text-uppercase">{{fmtDate(prj.startDtYr, prj.startDtMo)}} - {{fmtDate(prj.endDtYr, prj.endDtMo)}}</b></small></div>
                         </div>
-                        <div class="mt-2 ms-4 ps-2 border-start border-3" style="font-weight: 300;">
+                        <div class="mt-2 ms-4 ps-2 border-start border-3 fw-light">
                             <p><small>{{prj.des}}</small></p>
                             <p>
                                 <small class="d-block">Market: <b>{{prj.market}}</b></small>
@@ -129,7 +129,7 @@
                                 <small>Role(s): <b>{{prj.role}}</b></small>
                                 <small>
                                     <ul style="list-style: square">
-                                        <li v-for="prjRole in prj.roleDes" style="font-weight: 300">{{prjRole}}</li>
+                                        <li v-for="prjRole in prj.roleDes" class="fw-light">{{prjRole}}</li>
                                     </ul>
                                 </small>
                             </div>
