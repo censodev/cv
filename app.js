@@ -1,6 +1,6 @@
-import { ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
-import CvHeader from './cv-header.js'
-import CvCat from './cv-cat.js'
+import { ref } from 'vue'
+import CvHeader from './components/cv-header.js'
+import CvCat from './components/cv-cat.js'
 
 export default {
     components: {
