@@ -121,12 +121,12 @@
                         <div class="mt-2 ms-4 ps-2 border-start border-3" style="font-weight: 300;">
                             <p><small>{{prj.des}}</small></p>
                             <p>
-                                <small>Tech: <b>{{prj.tech.join(', ')}}</b></small>
-                                <br>
-                                <small>Team: <b>{{prj.team}}</b></small>
+                                <small class="d-block">Market: <b>{{prj.market}}</b></small>
+                                <small class="d-block">Technologies: <b>{{prj.tech.join(', ')}}</b></small>
+                                <small class="d-block">Team: <b>{{prj.team}}</b></small>
                             </p>
                             <div>
-                                <small>Role: <b>{{prj.role}}</b></small>
+                                <small>Role(s): <b>{{prj.role}}</b></small>
                                 <small>
                                     <ul style="list-style: square">
                                         <li v-for="prjRole in prj.roleDes" style="font-weight: 300">{{prjRole}}</li>

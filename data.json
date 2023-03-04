@@ -12,9 +12,10 @@
         "github": "https://github.com/censodev",
         "skills": [
             "Languages: <b>Java, Javascript/Typescript, PHP, ...</b>",
-            "Frameworks: <b>Spring, Angular, Laravel, ...</b>",
-            "Dev tools: <b>Git, Docker, ...</b>",
-            "System: <b>Linux On-Premise, AWS Cloud</b>",
+            "Frameworks: <b>Spring, Angular, ...</b>",
+            "Dev/Ops tools: <b>Git, Maven, Docker, K8s, CI/CD, ...</b>",
+            "Infrastructures: <b>Linux On-Premise, AWS Cloud</b>",
+            "Databases: <b>MySQL, PostgreSQL, ...</b>",
             "Foreign language: <b>English B2</b>"
         ],
         "edu": [
@@ -73,6 +74,54 @@
         ],
         "projects": [
             {
+                "name": "NCS.SH RE-ENGINEERING",
+                "startDtMo": 5,
+                "startDtYr": 2022,
+                "endDtMo": null,
+                "endDtYr": null,
+                "role": "Back-end Engineer",
+                "roleDes": [
+                    "Migrate the core business module of the old system",
+                    "Support UAT"
+                ],
+                "des": "A system manages student's profiles",
+                "market": "Singapore",
+                "tech": [
+                    "Spring",
+                    "JSP",
+                    "Strusts",
+                    "PostgreSQL",
+                    "Bamboo",
+                    "K8s/EKS",
+                    "AWS"
+                ],
+                "team": "5 members"
+            },
+            {
+                "name": "SRMS DATA STORAGE",
+                "startDtMo": 12,
+                "startDtYr": 2021,
+                "endDtMo": 4,
+                "endDtYr": 2022,
+                "role": "Back-end Engineer",
+                "roleDes": [
+                    "Maintain features (manual and scheduled archiving process)",
+                    "Build CI/CD pipeline, containerize application, deploy application, operate servers"
+                ],
+                "des": "A system archives data from the agent systems which run on both on-premises and cloud to the central data warehouses",
+                "market": "Taiwan",
+                "tech": [
+                    "Spring",
+                    "ReactJS",
+                    "MongoDB",
+                    "Docker",
+                    "Jenkins",
+                    "AWS",
+                    "Azure"
+                ],
+                "team": "5 members"
+            },
+            {
                 "name": "EVACCINE",
                 "startDtMo": 6,
                 "startDtYr": 2021,
@@ -85,10 +134,13 @@
                     "Deploy and support system operating"
                 ],
                 "des": "Vaccine injection management system especially support for Covid-19 vaccination campaigns",
+                "market": "Vietnam",
                 "tech": [
                     "Spring",
                     "Angular",
-                    "React Native"
+                    "React Native",
+                    "Oracle Database",
+                    "Docker"
                 ],
                 "team": "20 members"
             },
@@ -107,11 +159,12 @@
                     "Build Elasticsearch service for persisting and searching documents"
                 ],
                 "des": "CMS module for private training and public researching of a call center system",
+                "market": "Vietnam",
                 "tech": [
                     "Spring",
-                    "ASP.NET",
                     "Angular",
-                    "Elasticsearch"
+                    "Elasticsearch",
+                    "Docker"
                 ],
                 "team": "3 members"
             },
@@ -130,11 +183,14 @@
                     "Claim requirements of customers"
                 ],
                 "des": "Monitor ship's voyage in seaports, manage dredgers plans,...",
+                "market": "Vietnam",
                 "tech": [
                     "Spring",
                     "Angular",
                     "AIS IoT",
-                    "Docker"
+                    "Docker",
+                    "Google Map API",
+                    "PostgreSQL"
                 ],
                 "team": "5 members"
             },
@@ -150,11 +206,12 @@
                     "Setup production deployment"
                 ],
                 "des": "A real estates portal",
+                "market": "Vietnam",
                 "tech": [
                     "Laravel",
-                    "Spring",
                     "Angular",
                     "Elasticsearch",
+                    "MySQL",
                     "Docker"
                 ],
                 "team": "11 members"
@@ -172,10 +229,15 @@
                     "Deploy and monitor Java services on Linux VM"
                 ],
                 "des": "Internal application for telecom switchboard operators",
+                "market": "Vietnam",
                 "tech": [
                     "Spring",
                     "Angular",
-                    "Microservice"
+                    "Oracle Database",
+                    "Redis",
+                    "RabbitMQ",
+                    "Kafka",
+                    "Microservices"
                 ],
                 "team": "12 members"
             },
@@ -190,11 +252,13 @@
                     "Develop features: chatbox and social network interactions using Firebase"
                 ],
                 "des": "A private social network for company",
+                "market": "Vietnam",
                 "tech": [
                     "Laravel",
                     "Angular",
                     "React Native",
-                    "Firebase"
+                    "Firebase",
+                    "MySQL"
                 ],
                 "team": "7 members"
             },
@@ -209,9 +273,11 @@
                     "Work with designer to develop dynamic landing pages"
                 ],
                 "des": "A series of landing pages running enrollment campaigns, advertising, IT courses, minigames and more",
+                "market": "Vietnam",
                 "tech": [
                     "PHP",
-                    "HTML/CSS/JS"
+                    "HTML/CSS/JS",
+                    "MySQL"
                 ],
                 "team": "2 members"
             }
