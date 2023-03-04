@@ -1,9 +1,11 @@
 import { ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
 import CvHeader from './cv-header.js'
+import CvCat from './cv-cat.js'
 
 export default {
     components: {
         CvHeader,
+        CvCat,
     },
     setup() {
         const cv = ref({})
@@ -50,13 +52,7 @@ export default {
             <!-- CV BODY - START -->
             <div class="cv-body p-5 flex-grow-1">
                 <!-- EDUCATION - START -->
-                <div class="cat-title">
-                    <div class="cat-icon">
-                        <i class="bi bi-book-fill"></i>
-                    </div>
-                    <h5 class="ps-3 m-0 fw-bold">EDUCATION</h5>
-                </div>
-                <div class="d-flex flex-column gap-3 mt-3">
+                <CvCat icon="bi-book-fill" title="EDUCATION">
                     <div v-for="edu in cv.edu">
                         <div class="d-flex">
                             <div><b class="text-uppercase" v-html="edu.school"></b></div>
@@ -67,16 +63,10 @@ export default {
                             <small class="d-block text-secondary" v-if="edu.grade">Grade: {{edu.grade}}</small>
                         </div>
                     </div>
-                </div>
+                </CvCat>
                 <!-- EDUCATION - END -->
                 <!-- EXPERIENCE - START -->
-                <div class="cat-title mt-5">
-                    <div class="cat-icon">
-                        <i class="bi bi-wallet-fill"></i>
-                    </div>
-                    <h5 class="ps-3 m-0 fw-bold">EXPERIENCE</h5>
-                </div>
-                <div class="d-flex flex-column gap-3 mt-3">
+                <CvCat icon="bi-wallet-fill" title="EXPERIENCE" class="mt-5">
                     <div v-for="exp in cv.exp">
                         <div class="d-flex">
                             <div><b class="text-uppercase">{{exp.title}}</b></div>
@@ -85,29 +75,17 @@ export default {
                         <div class="fw-light"><small>{{exp.company}} • {{exp.empType}} • {{fmtDuration(exp.startDtYr, exp.startDtMo, exp.endDtYr, exp.endDtMo)}}</small></div>
                         <div class="text-secondary fw-light"><small>{{exp.location}}</small></div>
                     </div>
-                </div>
+                </CvCat>
                 <!-- EXPERIENCE - END -->
                 <!-- SKILLS - START -->
-                <div class="cat-title mt-5">
-                    <div class="cat-icon">
-                        <i class="bi bi-pen-fill"></i>
-                    </div>
-                    <h5 class="ps-3 m-0 fw-bold">SKILLS</h5>
-                </div>
-                <div class="d-flex flex-column gap-3 mt-3">
+                <CvCat icon="bi-pen-fill" title="SKILLS" class="mt-5">
                     <ul id="cvSkills" style="list-style: square">
                         <li v-for="skv, skk in cv.skills" class="fw-light">{{skk}}: <b>{{skv}}</b></li>
                     </ul>
-                </div>
+                </CvCat>
                 <!-- SKILLS - END -->
                 <!-- PROJECTS - START -->
-                <div class="cat-title mt-5">
-                    <div class="cat-icon">
-                        <i class="bi bi-code"></i>
-                    </div>
-                    <h5 class="ps-3 m-0 fw-bold">PROJECTS</h5>
-                </div>
-                <div id="cvProjects" class="d-flex flex-column gap-4 mt-3">
+                <CvCat icon="bi-code" title="PROJECTS" class="mt-5">
                     <div v-for="prj in cv.projects">
                         <div class="d-flex">
                             <div><b class="text-uppercase">{{prj.name}}</b></div>
@@ -130,7 +108,7 @@ export default {
                             </div>
                         </div>
                     </div>
-                </div>
+                    </CvCat>
                 <!-- PROJECTS - END -->
             </div>
             <!-- CV BODY - END -->
