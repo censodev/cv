@@ -5,7 +5,7 @@ export default {
         <div>
             <div class="cat-title">
                 <div class="cat-icon">
-                    <i class="bi" :class="icon"></i>
+                    <i :class="icon"></i>
                 </div>
                 <h5 class="ps-3 m-0 fw-bold">{{title}}</h5>
             </div>

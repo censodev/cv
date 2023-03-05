@@ -52,7 +52,7 @@ export default {
             <!-- CV BODY - START -->
             <div class="cv-body p-5 flex-grow-1">
                 <!-- EDUCATION - START -->
-                <CvCat icon="bi-book-fill" title="EDUCATION">
+                <CvCat icon="bi bi-book-fill" title="EDUCATION">
                     <div v-for="edu in cv.edu">
                         <div class="d-flex">
                             <div><b class="text-uppercase" v-html="edu.school"></b></div>
@@ -66,7 +66,7 @@ export default {
                 </CvCat>
                 <!-- EDUCATION - END -->
                 <!-- EXPERIENCE - START -->
-                <CvCat icon="bi-wallet-fill" title="EXPERIENCE" class="mt-5">
+                <CvCat icon="bi bi-wallet-fill" title="EXPERIENCE" class="mt-5">
                     <div v-for="exp in cv.exp">
                         <div class="d-flex">
                             <div><b class="text-uppercase">{{exp.title}}</b></div>
@@ -78,14 +78,14 @@ export default {
                 </CvCat>
                 <!-- EXPERIENCE - END -->
                 <!-- SKILLS - START -->
-                <CvCat icon="bi-pen-fill" title="SKILLS" class="mt-5">
+                <CvCat icon="bi bi-pen-fill" title="SKILLS" class="mt-5">
                     <ul id="cvSkills" style="list-style: square">
                         <li v-for="skv, skk in cv.skills" class="fw-light">{{skk}}: <b>{{skv}}</b></li>
                     </ul>
                 </CvCat>
                 <!-- SKILLS - END -->
                 <!-- PROJECTS - START -->
-                <CvCat icon="bi-code" title="PROJECTS" class="mt-5">
+                <CvCat icon="bi bi-code" title="PROJECTS" class="mt-5">
                     <div v-for="prj in cv.projects">
                         <div class="d-flex">
                             <div><b class="text-uppercase">{{prj.name}}</b></div>
