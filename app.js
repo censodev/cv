@@ -20,10 +20,10 @@ export default {
             return await res.json()
         }
 
-        function fmtDate(year, month) {
+        function fmtDate(year, month, fmtForNullYear = 'present') {
             const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
             if (!year)
-                return 'present'
+                return fmtForNullYear
             else if (!month)
                 return year
             return `${months[month - 1]} ${year}`
@@ -79,11 +79,30 @@ export default {
                 <!-- EXPERIENCE - END -->
                 <!-- SKILLS - START -->
                 <CvCat icon="bi bi-pen-fill" title="SKILLS" class="mt-5" v-if="cv.skills">
-                    <ul id="cvSkills" style="list-style: square">
+                    <ul style="list-style: square">
                         <li v-for="skv, skk in cv.skills" class="fw-light">{{skk}}: <b>{{skv}}</b></li>
                     </ul>
                 </CvCat> 
                 <!-- SKILLS - END -->
+                <!-- CERTIFICATES - START -->
+                <CvCat icon="bi bi-patch-check-fill" title="CERTIFICATES" class="mt-5" v-if="cv.certs">
+                    <div v-for="cert in cv.certs">
+                        <div class="d-flex fw-bold text-uppercase">
+                            <div>{{cert.title}}</div>
+                            <div class="ms-auto">
+                                <small>{{fmtDate(cert.issuedDtYr, cert.issuedDtMo)}}</small>
+                            </div>
+                        </div>
+                        <div class="fw-light"><small>{{cert.author}}</small></div>
+                        <small class="d-block fw-light text-secondary">
+                            <a :href="cert.link" class="text-secondary" target="_blank">
+                                {{cert.link}}
+                                <i style="font-size: 10px;" class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </small>
+                    </div>
+                </CvCat> 
+                <!-- CERTIFICATES - END -->
                 <!-- PROJECTS - START -->
                 <CvCat icon="bi bi-code" title="PROJECTS" class="mt-5" v-if="cv.projects">
                     <div v-for="prj in cv.projects">

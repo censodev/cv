@@ -70,6 +70,15 @@
             "location": "Hanoi, Vietnam"
         }
     ],
+    "certs": [
+        {
+            "title": "AWS Cloud Developer",
+            "author": "Udacity",
+            "link": "https://graduation.udacity.com/confirm/P9ZGC72K",
+            "issuedDtMo": 5,
+            "issuedDtYr": 2022
+        }
+    ],
     "projects": [
         {
             "name": "NCS.SH RE-ENGINEERING",

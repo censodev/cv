@@ -19,13 +19,17 @@ export default {
                 </div>
                 <div class="d-flex align-items-center" v-if="cv.phone">
                     <i class="bi bi-telephone"></i>
-                    <a class="ps-2 text-white" :href="'tel:' + cv.phone">{{cv.phone}}</a>
-                    <i style="font-size: 10px;" class="bi bi-box-arrow-up-right ps-1"></i>
+                    <a class="ps-2 text-white" :href="'tel:' + cv.phone" target="_blank">
+                        {{cv.phone}}
+                        <i style="font-size: 10px;" class="bi bi-box-arrow-up-right"></i>
+                    </a>
                 </div>
                 <div class="d-flex align-items-center" v-if="cv.mail">
                     <i class="bi bi-envelope"></i>
-                    <a class="ps-2 text-white" :href="'mailto:' + cv.mail">{{cv.mail}}</a>
-                    <i style="font-size: 10px;" class="bi bi-box-arrow-up-right ps-1"></i>
+                    <a class="ps-2 text-white" :href="'mailto:' + cv.mail" target="_blank">
+                        {{cv.mail}}
+                        <i style="font-size: 10px;" class="bi bi-box-arrow-up-right"></i>
+                    </a>
                 </div>
                 <div class="d-flex align-items-center" v-if="cv.address">
                     <i class="bi bi-geo-alt"></i>
@@ -33,8 +37,10 @@ export default {
                 </div>
                 <div class="d-flex align-items-center" v-if="cv.github">
                     <i class="bi bi-github"></i>
-                    <a class="ps-2 text-white" :href="cv.github">{{cv.github}}</a>
-                    <i style="font-size: 10px;" class="bi bi-box-arrow-up-right ps-1"></i>
+                    <a class="ps-2 text-white" :href="cv.github" target="_blank">
+                        {{cv.github}}
+                        <i style="font-size: 10px;" class="bi bi-box-arrow-up-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
