@@ -77,13 +77,6 @@ export default {
                     </div>
                 </CvCat>
                 <!-- EXPERIENCE - END -->
-                <!-- SKILLS - START -->
-                <CvCat icon="bi bi-pen-fill" title="SKILLS" class="mt-5" v-if="cv.skills">
-                    <ul style="list-style: square" class="mb-0 ms-1">
-                        <li v-for="skv, skk in cv.skills" class="fw-light">{{skk}}: <b>{{skv}}</b></li>
-                    </ul>
-                </CvCat> 
-                <!-- SKILLS - END -->
                 <!-- CERTIFICATES - START -->
                 <CvCat icon="bi bi-patch-check-fill" title="CERTIFICATES" class="mt-5" v-if="cv.certs">
                     <div v-for="cert in cv.certs">
@@ -103,6 +96,13 @@ export default {
                     </div>
                 </CvCat> 
                 <!-- CERTIFICATES - END -->
+                <!-- SKILLS - START -->
+                <CvCat icon="bi bi-pen-fill" title="SKILLS" class="mt-5" v-if="cv.skills">
+                    <ul style="list-style: square" class="mb-0 ms-1">
+                        <li v-for="skv, skk in cv.skills" class="fw-light">{{skk}}: <b>{{skv}}</b></li>
+                    </ul>
+                </CvCat> 
+                <!-- SKILLS - END -->
                 <!-- PROJECTS - START -->
                 <CvCat icon="bi bi-code" title="PROJECTS" class="mt-5" v-if="cv.projects">
                     <div v-for="prj in cv.projects">

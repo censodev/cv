@@ -2,17 +2,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    background-color: #525659;
-}
-
 a {
     text-decoration: none;
 }
 
+#app {
+    background-color: #525659;
+}
+
 .cv {
     width: 820px!important;
-    height: calc(1122px*3)!important;
 }
 
 .cv-header {
