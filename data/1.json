@@ -79,14 +79,14 @@
             "endDtYr": null,
             "role": "Back-end Engineer",
             "roleDes": [
-                "Migrate the core business module of the old system",
-                "Support UAT"
+                "Migrate the core business module of the system from Servlet to Spring, On-premise to AWS",
+                "Develop the new core module's integration library for the client modules (web, batch server, ...)"
             ],
             "des": "A system manages student's profiles",
             "market": "Singapore",
             "tech": [
                 "Spring",
-                "JSP",
+                "JSP/Servlet",
                 "Strusts",
                 "PostgreSQL",
                 "Bamboo",
