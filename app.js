@@ -50,10 +50,10 @@ export default {
             <CvHeader :cv="cv" />
             <!-- CV HEADER - END -->
             <!-- CV BODY - START -->
-            <div class="cv-body p-5 flex-grow-1">
+            <div class="cv-body p-5 flex-grow-1 d-grid gap-5">
                 <!-- EDUCATION - START -->
                 <CvCat icon="bi bi-book-fill" title="EDUCATION" v-if="cv.edu">
-                    <div v-for="edu in cv.edu">
+                    <div v-for="edu in cv.edu" class="pb-inside-avoid">
                         <div class="d-flex">
                             <div><b class="text-uppercase" v-html="edu.school"></b></div>
                             <div class="ms-auto"><small><b class="text-uppercase">{{fmtDate(edu.startDtYr, edu.startDtMo)}} - {{fmtDate(edu.endDtYr, edu.endDtMo)}}</b></small></div>
@@ -66,8 +66,8 @@ export default {
                 </CvCat>
                 <!-- EDUCATION - END -->
                 <!-- EXPERIENCE - START -->
-                <CvCat icon="bi bi-wallet-fill" title="EXPERIENCE" class="mt-5" v-if="cv.exp">
-                    <div v-for="exp in cv.exp">
+                <CvCat icon="bi bi-wallet-fill" title="EXPERIENCE" v-if="cv.exp">
+                    <div v-for="exp in cv.exp" class="pb-inside-avoid">
                         <div class="d-flex">
                             <div><b class="text-uppercase">{{exp.title}}</b></div>
                             <div class="ms-auto"><small><b class="text-uppercase">{{fmtDate(exp.startDtYr, exp.startDtMo)}} - {{fmtDate(exp.endDtYr, exp.endDtMo)}}</b></small></div>
@@ -78,8 +78,8 @@ export default {
                 </CvCat>
                 <!-- EXPERIENCE - END -->
                 <!-- CERTIFICATES - START -->
-                <CvCat icon="bi bi-patch-check-fill" title="CERTIFICATES" class="mt-5" v-if="cv.certs">
-                    <div v-for="cert in cv.certs">
+                <CvCat icon="bi bi-patch-check-fill" title="CERTIFICATES" v-if="cv.certs">
+                    <div v-for="cert in cv.certs" class="pb-inside-avoid">
                         <div class="d-flex fw-bold text-uppercase">
                             <div>{{cert.title}}</div>
                             <div class="ms-auto">
@@ -97,15 +97,15 @@ export default {
                 </CvCat> 
                 <!-- CERTIFICATES - END -->
                 <!-- SKILLS - START -->
-                <CvCat icon="bi bi-pen-fill" title="SKILLS" class="mt-5" v-if="cv.skills">
+                <CvCat icon="bi bi-pen-fill" title="SKILLS" v-if="cv.skills">
                     <ul style="list-style: square" class="mb-0 ms-1">
-                        <li v-for="skv, skk in cv.skills" class="fw-light">{{skk}}: <b>{{skv}}</b></li>
+                        <li v-for="skv, skk in cv.skills" class="fw-light pb-inside-avoid">{{skk}}: <b>{{skv}}</b></li>
                     </ul>
                 </CvCat> 
                 <!-- SKILLS - END -->
                 <!-- PROJECTS - START -->
-                <CvCat icon="bi bi-code" title="PROJECTS" class="mt-5" v-if="cv.projects">
-                    <div v-for="prj in cv.projects">
+                <CvCat icon="bi bi-code" title="PROJECTS" v-if="cv.projects">
+                    <div v-for="prj in cv.projects" class="pb-inside-avoid">
                         <div class="d-flex">
                             <div><b class="text-uppercase">{{prj.name}}</b></div>
                             <div class="ms-auto"><small><b class="text-uppercase">{{fmtDate(prj.startDtYr, prj.startDtMo)}} - {{fmtDate(prj.endDtYr, prj.endDtMo)}}</b></small></div>
