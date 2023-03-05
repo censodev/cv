@@ -79,7 +79,7 @@ export default {
                 <!-- EXPERIENCE - END -->
                 <!-- SKILLS - START -->
                 <CvCat icon="bi bi-pen-fill" title="SKILLS" class="mt-5" v-if="cv.skills">
-                    <ul style="list-style: square">
+                    <ul style="list-style: square" class="mb-0">
                         <li v-for="skv, skk in cv.skills" class="fw-light">{{skk}}: <b>{{skv}}</b></li>
                     </ul>
                 </CvCat> 
