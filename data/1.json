@@ -72,6 +72,13 @@
     ],
     "certs": [
         {
+            "title": "AWS Cloud Architect",
+            "author": "Udacity",
+            "link": "https://graduation.udacity.com/confirm/e/62d1612e-ac82-11ed-beb6-cba4ac8643aa",
+            "issuedDtMo": 4,
+            "issuedDtYr": 2023
+        },
+        {
             "title": "AWS Cloud Developer",
             "author": "Udacity",
             "link": "https://graduation.udacity.com/confirm/P9ZGC72K",
