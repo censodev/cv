@@ -94,12 +94,12 @@
             "startDtYr": 2022,
             "endDtMo": null,
             "endDtYr": null,
-            "role": "Back-end Engineer",
+            "role": "Back-end Engineer, Team Leader",
             "roleDes": [
-                "Migrate the core business module of the system from Servlet to Spring, On-premise to AWS",
-                "Develop the new core module's integration library for the client modules (web, batch server, ...)"
+                "I worked as a Back-end engineer in a team that mainly migrated some core services in that system from Servlet, Struts2 to Spring Boot for about 1y. Re-engineering phase successfully went live in the 1st quarter of 2023 and the number of production issues came from my team is the lowest one among all the application teams.",
+                "After re-engineering phase, I was promoted to leader of that team and also toke more responsibilities on managing and working together with other DBA, DevOps/Infra teams to deliver the new service requests from end-users."
             ],
-            "des": "A system manages student's profiles",
+            "des": "Client requested a re-engineering project for a system that manages student's data. The old system run on on-premise environment and was built with main tech stacks like JSP/Servlet, Struts2, Oracle, ... Now, client expect to migrate that system to AWS Cloud, also build a modern DevSecOps pipeline to deliver product and change tech stacks to Spring Framework, Spring Boot, Angular and PostgreSQL.",
             "market": "Singapore",
             "tech": [
                 "Spring",
