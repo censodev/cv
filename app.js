@@ -16,7 +16,7 @@ export default {
         fetchCV(id).then(data => cv.value = data)
 
         async function fetchCV(id) {
-            const res = await fetch(`data/${id}.json`)
+            const res = await fetch(`https://censodev.github.io/cv-data/${id}.json`)
             return await res.json()
         }
 
