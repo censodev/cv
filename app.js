@@ -112,7 +112,7 @@ export default {
                     <div v-for="prj in cv.projects" class="pb-inside-avoid">
                         <div class="d-flex">
                             <div><b class="text-uppercase">{{prj.name}}</b></div>
-                            <div class="ms-auto"><small><b class="text-uppercase">{{fmtDuration(prj.startDtYr, prj.startDtMo, prj.endDtYr, prj.endDtMo)}} • {{fmtDate(prj.startDtYr, prj.startDtMo)}} - {{fmtDate(prj.endDtYr, prj.endDtMo)}}</b></small></div>
+                            <div class="ms-auto"><small><b class="text-uppercase">{{fmtDate(prj.startDtYr, prj.startDtMo)}} - {{fmtDate(prj.endDtYr, prj.endDtMo)}}</b></small></div>
                         </div>
                         <div class="mt-2 ms-4 ps-2 border-start border-3 fw-light">
                             <p><small>{{prj.des}}</small></p>
