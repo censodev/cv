@@ -55,6 +55,9 @@ export default {
             <!-- CV HEADER - END -->
             <!-- CV BODY - START -->
             <div class="cv-body p-5 flex-grow-1 d-grid gap-5">
+                <!-- ABOUT - START -->
+                <p v-if="cv.about" class="m-0 text-justify">{{cv.about}}</p>
+                <!-- ABOUT - END -->
                 <!-- EDUCATION - START -->
                 <CvCat icon="bi bi-book-fill" title="EDUCATION" v-if="cv.edu">
                     <div v-for="edu in cv.edu" class="pb-inside-avoid">

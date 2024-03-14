@@ -6,6 +6,10 @@ a {
     text-decoration: none;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 #app {
     background-color: #525659;
 }
